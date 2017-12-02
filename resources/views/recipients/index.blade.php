@@ -35,32 +35,32 @@
                 <tbody>
                     @forelse($items0 as $item0)
                         <tr style="cursor: pointer;" id='{{$item0->id}}' class="cards">
-                            <td><img src="{{ asset('images/defaults/sampic.jpg')}}" alt="" width='100' height='100'>
+                            <td><img src="{{ asset('images/defaults/hospital.jpg')}}" alt="" width='100' height='100'>
                             </td>
                             <td><h2>{{$item0->name}}</h2>
-                                <p>Blood Bank</p>
+                                <span class="label label-danger">Blood Bank</span>
                                 <p>{{$item0->location}}</p>
                             </td>
                             <td>
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#create0{{$item0->id}}" ><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#create0{{$item0->id}}" ><i class="fa fa-pencil"></i></button>
                             </td>
                         </tr>
                     @empty
                     @endforelse
-                    @forelse($items as $item)
+                   <!--  @forelse($items as $item)
                         <tr style="cursor: pointer;" id='{{$item->id}}' class="cards">
-                            <td><img src="{{ asset('images/defaults/sampic.jpg')}}" alt="" width='100' height='100'>
+                            <td><img src="{{ asset('images/defaults/user.png')}}" alt="" width='100' height='100'>
                             </td>
                             <td><h2>{{$item->first_name . ' ' . $item->last_name}}</h2>
-                                <p>Blood Donor</p>
+                                <span class="label label-success">Blood Donor</span>
                                 <p>{{$item->location}}</p>
                             </td>
-                        </tr>
                             <td>
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#create{{$item->id}}" ><i class="fa fa-pencil"></i></button>
-                            </td>                        
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#create{{$item->id}}" ><i class="fa fa-pencil"></i></button>
+                            </td>       
+                        </tr>           
                     @empty
-                    @endforelse                    
+                    @endforelse     -->                
                 </tbody>
             </table>
             <center>{{$items->links()}}<center>
@@ -68,11 +68,9 @@
         </div>
         <div class='col-md-4 col-lg-4'>
             <div class='well text-center'>
-                <img src="{{ asset('images/defaults/sampic.jpg')}}" alt="" width='150' height='150' style='border-radius: 50%;'>
+                <img src="{{ asset('images/defaults/rcpnt.jpg')}}" alt="" width='150' height='150' style='border-radius: 50%;'>
                 <h1>John Doe</h1>
                 <p>Type A</p>
-                <button class='btn btn-success'>Blood Request</button>
-                <button class='btn btn-primary'>Donation Request</button>
             </div>
         </div>
     </div>

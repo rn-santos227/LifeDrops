@@ -5,7 +5,7 @@
       		<div class="panel-body" clearfix>
       			<center>
       				<div id="text_info" style="margin-bottom: 5%; margin-top: 5%;">
-      					
+      					Do you want to Accept this request?
       				</div>
       				<div id=etc>
       				</div>

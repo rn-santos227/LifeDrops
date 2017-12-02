@@ -1,10 +1,10 @@
 <?php
 
-namespace LifeDrops\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use LifeDrops\Donor;
-use LifeDrops\BloodBank;
+use App\Donor;
+use App\BloodBank;
 use DB;
 
 class RecipientController extends Controller
@@ -20,13 +20,13 @@ class RecipientController extends Controller
         $items0 = BloodBank::where(function ($query) use ($request){
                   $query->where('name', 'like', '%'.$request->search .'%')
                         ->orWhere('location', 'like', '%'.$request->search.'%');
-        })->get();        
+        })->paginate(5);        
         return view('recipients.index', compact('items','items0', 'success'));       
 
       } else {
 
         $items = Donor::paginate(5);
-        $items0 = BloodBank::all();
+        $items0 = BloodBank::paginate(5);
         return view('recipients.index', compact('items','items0', 'success'));          
       } 	
     }

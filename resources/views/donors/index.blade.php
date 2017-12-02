@@ -31,10 +31,10 @@
             </div>
             </form>
             <table class = "table table-hover">
-                <h3 style="color: #bf5329;">Blood Banks</h3> 
                 <thead>
                 </thead>
                 <tbody>
+                    <h3 style="color: #bf5329;">Blood Banks</h3> 
                     @forelse($items as $item)
                         <tr style="cursor: pointer;" id='{{$item->id}}' class="cards">
                             <td><img src="{{ asset('images/defaults/hospital.jpg')}}" alt="" width='100' height='100'>
@@ -56,6 +56,7 @@
                 <img src="{{ asset('images/defaults/user.jpg')}}" alt="" width='150' height='150' style='border-radius: 50%;'>
                 <h1>John Doe</h1>
                 <p>Type A</p>
+                <p>4 donations</p>
             </div>
         </div>
     </div>

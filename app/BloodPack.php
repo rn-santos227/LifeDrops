@@ -1,6 +1,6 @@
 <?php
 
-namespace LifeDrops;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 

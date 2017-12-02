@@ -26,7 +26,7 @@
 <div id="content">
 	<div id="top-parallax" class="parallax parallax-one">
 		<div>
-			<h1 style="margin-top: 2%; font-size: 10px;"><a href="/dprofile"><a href="/donorsched" style="color: white;">D O N A T E&nbsp;&nbsp;&nbsp; N O W!</a></h1>
+			<h1 style="margin-top: 2%; font-size: 10px;"><a href="/donor" style="color: white;">D O N A T E&nbsp;&nbsp;&nbsp; N O W!</a></h1>
 			<br>
 			<h1 style="width: 80%;"><img src="{{ asset('images/defaults/logo-white-tran.png')}}" style="width: 50%; height: 50%;"></h1>
 			<br>

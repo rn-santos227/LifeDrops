@@ -1,9 +1,9 @@
 <?php
 
-namespace LifeDrops\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use LifeDrops\BloodBank;
+use App\BloodBank;
 use DB;
 
 class DonorController extends Controller

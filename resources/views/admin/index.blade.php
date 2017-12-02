@@ -57,8 +57,8 @@
                 <img src="{{ asset('images/defaults/sampic.jpg')}}" alt="" width='150' height='150' style='border-radius: 50%;'>
                 <h1>John Doe</h1>
                 <p>Type A</p>
-                <button class='btn btn-primary'>Blood Requests</button>
-                <button class='btn btn-success'>Donation Requests</button>
+                <a href='/aprofile/brequests' class='btn btn-primary'>Blood Requests</a>
+                <a href='/aprofile/drequests' class='btn btn-success'>Donation Requests</a>
             </div>
         </div>
     </div>

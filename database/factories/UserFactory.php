@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(LifeDrops\User::class, function (Faker $faker) {
+$factory->define(App\User::class, function (Faker $faker) {
     static $password;
 
     return [
@@ -24,7 +24,7 @@ $factory->define(LifeDrops\User::class, function (Faker $faker) {
     ];
 });
 
-$factory->define(LifeDrops\BloodBank::class, function (Faker $faker) {
+$factory->define(App\BloodBank::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'contact' => $faker->phoneNumber,
@@ -33,7 +33,17 @@ $factory->define(LifeDrops\BloodBank::class, function (Faker $faker) {
     ];
 });
 
-$factory->define(LifeDrops\Recipient::class, function (Faker $faker) {
+$factory->define(App\Recipient::class, function (Faker $faker) {
+    return [
+        'first_name' => $faker->firstName,
+        'last_name' => $faker->lastName,        
+        'location' => $faker->phoneNumber,
+        'blood_type' => 'O',
+        'birthday' => $faker->date,        
+    ];
+});
+
+$factory->define(App\Donor::class, function (Faker $faker) {
     return [
         'first_name' => $faker->firstName,
         'last_name' => $faker->lastName,        

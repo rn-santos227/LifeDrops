@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        LifeDrops\Providers\AppServiceProvider::class,
-        LifeDrops\Providers\AuthServiceProvider::class,
-        // LifeDrops\Providers\BroadcastServiceProvider::class,
-        LifeDrops\Providers\EventServiceProvider::class,
-        LifeDrops\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 
