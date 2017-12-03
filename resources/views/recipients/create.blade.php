@@ -19,6 +19,15 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="contact" class="col-md-4 control-label">Blood Bank: </label>
+                        <div class="col-md-7">
+                            <input type="text" rows=10 cols="10" id="modal_email" class="form-control" name="email" readonly value="{{$item0->email}}"> 
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
                         <label for="contact" class="col-md-4 control-label">Location: </label>
                         <div class="col-md-7">
                             <input type="text" rows=10 cols="10" id="modal-location" class="form-control" name="location" readonly value="{{$item0->location}}"> 
@@ -85,6 +94,14 @@
                         <label for="contact" class="col-md-4 control-label">Donor Name : </label>
                         <div class="col-md-7">
                             <input type="text" rows=10 cols="10" id="modal_donor_name" class="form-control" name="donor" readonly value="{{$item->first_name . ' ' . $item->last_name }}"> 
+                        </div>
+                    </div>
+
+
+                  <div class="form-group">
+                        <label for="contact" class="col-md-4 control-label">Blood Bank: </label>
+                        <div class="col-md-7">
+                            <input type="text" rows=10 cols="10" id="modal_email" class="form-control" name="email" readonly value="{{$item->email}}"> 
                         </div>
                     </div>
 
